@@ -29,95 +29,95 @@ namespace Biblioteca
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
-			this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-			this.cadastroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.livrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.tipoTransaçãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.gêneroLivroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.clienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.transaçãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.menuStrip1.SuspendLayout();
-			this.SuspendLayout();
-			// 
-			// menuStrip1
-			// 
-			this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.cadastroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.livrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tipoTransaçãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gêneroLivroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.clienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.transaçãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cadastroToolStripMenuItem,
             this.transaçãoToolStripMenuItem});
-			this.menuStrip1.Location = new System.Drawing.Point(20, 60);
-			this.menuStrip1.Name = "menuStrip1";
-			this.menuStrip1.Size = new System.Drawing.Size(760, 24);
-			this.menuStrip1.TabIndex = 1;
-			this.menuStrip1.Text = "menuStrip1";
-			// 
-			// cadastroToolStripMenuItem
-			// 
-			this.cadastroToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuStrip1.Location = new System.Drawing.Point(20, 60);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(760, 24);
+            this.menuStrip1.TabIndex = 1;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // cadastroToolStripMenuItem
+            // 
+            this.cadastroToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.livrosToolStripMenuItem,
             this.tipoTransaçãoToolStripMenuItem,
             this.gêneroLivroToolStripMenuItem,
             this.clienteToolStripMenuItem});
-			this.cadastroToolStripMenuItem.Name = "cadastroToolStripMenuItem";
-			this.cadastroToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
-			this.cadastroToolStripMenuItem.Text = "Cadastro";
-			this.cadastroToolStripMenuItem.Click += new System.EventHandler(this.cadastroToolStripMenuItem_Click);
-			// 
-			// livrosToolStripMenuItem
-			// 
-			this.livrosToolStripMenuItem.Name = "livrosToolStripMenuItem";
-			this.livrosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-			this.livrosToolStripMenuItem.Text = "Livros";
-			this.livrosToolStripMenuItem.Click += new System.EventHandler(this.livrosToolStripMenuItem_Click);
-			// 
-			// tipoTransaçãoToolStripMenuItem
-			// 
-			this.tipoTransaçãoToolStripMenuItem.Name = "tipoTransaçãoToolStripMenuItem";
-			this.tipoTransaçãoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-			this.tipoTransaçãoToolStripMenuItem.Text = "Tipo Transação";
-			this.tipoTransaçãoToolStripMenuItem.Click += new System.EventHandler(this.tipoTransaçãoToolStripMenuItem_Click);
-			// 
-			// gêneroLivroToolStripMenuItem
-			// 
-			this.gêneroLivroToolStripMenuItem.Name = "gêneroLivroToolStripMenuItem";
-			this.gêneroLivroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-			this.gêneroLivroToolStripMenuItem.Text = "Gênero Livro";
-			this.gêneroLivroToolStripMenuItem.Click += new System.EventHandler(this.gêneroLivroToolStripMenuItem_Click);
-			// 
-			// clienteToolStripMenuItem
-			// 
-			this.clienteToolStripMenuItem.Name = "clienteToolStripMenuItem";
-			this.clienteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-			this.clienteToolStripMenuItem.Text = "Cliente";
-			this.clienteToolStripMenuItem.Click += new System.EventHandler(this.clienteToolStripMenuItem_Click);
-			// 
-			// transaçãoToolStripMenuItem
-			// 
-			this.transaçãoToolStripMenuItem.Name = "transaçãoToolStripMenuItem";
-			this.transaçãoToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
-			this.transaçãoToolStripMenuItem.Text = "Transação";
-			this.transaçãoToolStripMenuItem.Click += new System.EventHandler(this.transaçãoToolStripMenuItem_Click);
-			// 
-			// Menu
-			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.BackgroundImage = global::Biblioteca.Properties.Resources._1533036263_013678_1533080649_album_normal_recorte1;
-			this.ClientSize = new System.Drawing.Size(800, 450);
-			this.Controls.Add(this.menuStrip1);
-			this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-			this.IsMdiContainer = true;
-			this.MainMenuStrip = this.menuStrip1;
-			this.Name = "Menu";
-			this.Text = "Menu";
-			this.TransparencyKey = System.Drawing.Color.Empty;
-			this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-			this.Load += new System.EventHandler(this.Menu_Load);
-			this.menuStrip1.ResumeLayout(false);
-			this.menuStrip1.PerformLayout();
-			this.ResumeLayout(false);
-			this.PerformLayout();
+            this.cadastroToolStripMenuItem.Name = "cadastroToolStripMenuItem";
+            this.cadastroToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
+            this.cadastroToolStripMenuItem.Text = "Cadastro";
+            this.cadastroToolStripMenuItem.Click += new System.EventHandler(this.cadastroToolStripMenuItem_Click);
+            // 
+            // livrosToolStripMenuItem
+            // 
+            this.livrosToolStripMenuItem.Name = "livrosToolStripMenuItem";
+            this.livrosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.livrosToolStripMenuItem.Text = "Livros";
+            this.livrosToolStripMenuItem.Click += new System.EventHandler(this.livrosToolStripMenuItem_Click);
+            // 
+            // tipoTransaçãoToolStripMenuItem
+            // 
+            this.tipoTransaçãoToolStripMenuItem.Name = "tipoTransaçãoToolStripMenuItem";
+            this.tipoTransaçãoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.tipoTransaçãoToolStripMenuItem.Text = "Tipo Transação";
+            this.tipoTransaçãoToolStripMenuItem.Click += new System.EventHandler(this.tipoTransaçãoToolStripMenuItem_Click);
+            // 
+            // gêneroLivroToolStripMenuItem
+            // 
+            this.gêneroLivroToolStripMenuItem.Name = "gêneroLivroToolStripMenuItem";
+            this.gêneroLivroToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.gêneroLivroToolStripMenuItem.Text = "Gênero Livro";
+            this.gêneroLivroToolStripMenuItem.Click += new System.EventHandler(this.gêneroLivroToolStripMenuItem_Click);
+            // 
+            // clienteToolStripMenuItem
+            // 
+            this.clienteToolStripMenuItem.Name = "clienteToolStripMenuItem";
+            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.clienteToolStripMenuItem.Text = "Cliente";
+            this.clienteToolStripMenuItem.Click += new System.EventHandler(this.clienteToolStripMenuItem_Click);
+            // 
+            // transaçãoToolStripMenuItem
+            // 
+            this.transaçãoToolStripMenuItem.Name = "transaçãoToolStripMenuItem";
+            this.transaçãoToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
+            this.transaçãoToolStripMenuItem.Text = "Transação";
+            this.transaçãoToolStripMenuItem.Click += new System.EventHandler(this.transaçãoToolStripMenuItem_Click);
+            // 
+            // Menu
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Biblioteca.Properties.Resources._1533036263_013678_1533080649_album_normal_recorte1;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.menuStrip1);
+            this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.IsMdiContainer = true;
+            this.MainMenuStrip = this.menuStrip1;
+            this.Name = "Menu";
+            this.Text = "Menu";
+            this.TransparencyKey = System.Drawing.Color.Empty;
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.Menu_Load);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
+            this.ResumeLayout(false);
+            this.PerformLayout();
 
 		}
 

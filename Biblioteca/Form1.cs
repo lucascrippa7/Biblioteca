@@ -27,7 +27,8 @@ namespace Biblioteca
 
 		private void Menu_Load(object sender, EventArgs e)
 		{
-
+			//var frmLogin = new FrmLogin();
+			//frmLogin.ShowDialog();
 		}
 
 		private void livrosToolStripMenuItem_Click(object sender, EventArgs e)
