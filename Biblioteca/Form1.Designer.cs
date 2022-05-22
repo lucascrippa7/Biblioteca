@@ -36,6 +36,11 @@ namespace Biblioteca
             this.tipoTransaçãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gêneroLivroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.livrosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.transaçõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gênerosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.transaçãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -44,6 +49,7 @@ namespace Biblioteca
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cadastroToolStripMenuItem,
+            this.listasToolStripMenuItem,
             this.transaçãoToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(20, 60);
             this.menuStrip1.Name = "menuStrip1";
@@ -66,30 +72,67 @@ namespace Biblioteca
             // livrosToolStripMenuItem
             // 
             this.livrosToolStripMenuItem.Name = "livrosToolStripMenuItem";
-            this.livrosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.livrosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.livrosToolStripMenuItem.Text = "Livros";
             this.livrosToolStripMenuItem.Click += new System.EventHandler(this.livrosToolStripMenuItem_Click);
             // 
             // tipoTransaçãoToolStripMenuItem
             // 
             this.tipoTransaçãoToolStripMenuItem.Name = "tipoTransaçãoToolStripMenuItem";
-            this.tipoTransaçãoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.tipoTransaçãoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.tipoTransaçãoToolStripMenuItem.Text = "Tipo Transação";
             this.tipoTransaçãoToolStripMenuItem.Click += new System.EventHandler(this.tipoTransaçãoToolStripMenuItem_Click);
             // 
             // gêneroLivroToolStripMenuItem
             // 
             this.gêneroLivroToolStripMenuItem.Name = "gêneroLivroToolStripMenuItem";
-            this.gêneroLivroToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.gêneroLivroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.gêneroLivroToolStripMenuItem.Text = "Gênero Livro";
             this.gêneroLivroToolStripMenuItem.Click += new System.EventHandler(this.gêneroLivroToolStripMenuItem_Click);
             // 
             // clienteToolStripMenuItem
             // 
             this.clienteToolStripMenuItem.Name = "clienteToolStripMenuItem";
-            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.clienteToolStripMenuItem.Text = "Cliente";
             this.clienteToolStripMenuItem.Click += new System.EventHandler(this.clienteToolStripMenuItem_Click);
+            // 
+            // listasToolStripMenuItem
+            // 
+            this.listasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.clientesToolStripMenuItem,
+            this.livrosToolStripMenuItem1,
+            this.transaçõesToolStripMenuItem,
+            this.gênerosToolStripMenuItem});
+            this.listasToolStripMenuItem.Name = "listasToolStripMenuItem";
+            this.listasToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
+            this.listasToolStripMenuItem.Text = "Listas";
+            // 
+            // clientesToolStripMenuItem
+            // 
+            this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
+            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.clientesToolStripMenuItem.Text = "Clientes";
+            this.clientesToolStripMenuItem.Click += new System.EventHandler(this.clientesToolStripMenuItem_Click);
+            // 
+            // livrosToolStripMenuItem1
+            // 
+            this.livrosToolStripMenuItem1.Name = "livrosToolStripMenuItem1";
+            this.livrosToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.livrosToolStripMenuItem1.Text = "Livros";
+            this.livrosToolStripMenuItem1.Click += new System.EventHandler(this.livrosToolStripMenuItem1_Click);
+            // 
+            // transaçõesToolStripMenuItem
+            // 
+            this.transaçõesToolStripMenuItem.Name = "transaçõesToolStripMenuItem";
+            this.transaçõesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.transaçõesToolStripMenuItem.Text = "Transações";
+            // 
+            // gênerosToolStripMenuItem
+            // 
+            this.gênerosToolStripMenuItem.Name = "gênerosToolStripMenuItem";
+            this.gênerosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.gênerosToolStripMenuItem.Text = "Gêneros ";
             // 
             // transaçãoToolStripMenuItem
             // 
@@ -130,6 +173,11 @@ namespace Biblioteca
 		private System.Windows.Forms.ToolStripMenuItem gêneroLivroToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem clienteToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem transaçãoToolStripMenuItem;
-	}
+        private System.Windows.Forms.ToolStripMenuItem listasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem clientesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem livrosToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem transaçõesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem gênerosToolStripMenuItem;
+    }
 }
 

@@ -36,19 +36,19 @@ namespace Biblioteca
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtGenero = new System.Windows.Forms.TextBox();
             this.txtLivro = new System.Windows.Forms.TextBox();
             this.txtAutor = new System.Windows.Forms.TextBox();
             this.txtEditora = new System.Windows.Forms.TextBox();
             this.txtAno = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.cbxativo = new System.Windows.Forms.CheckBox();
+            this.cbGenero = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // txtID
             // 
             this.txtID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtID.Enabled = false;
             this.txtID.Location = new System.Drawing.Point(87, 30);
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(135, 20);
@@ -108,14 +108,6 @@ namespace Biblioteca
             this.label5.TabIndex = 6;
             this.label5.Text = "Ano edição";
             // 
-            // txtGenero
-            // 
-            this.txtGenero.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtGenero.Location = new System.Drawing.Point(87, 72);
-            this.txtGenero.Name = "txtGenero";
-            this.txtGenero.Size = new System.Drawing.Size(135, 20);
-            this.txtGenero.TabIndex = 8;
-            // 
             // txtLivro
             // 
             this.txtLivro.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -158,15 +150,6 @@ namespace Biblioteca
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(420, 240);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 15;
-            this.button2.Text = "Cancelar";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
             // cbxativo
             // 
             this.cbxativo.AutoSize = true;
@@ -177,19 +160,26 @@ namespace Biblioteca
             this.cbxativo.Text = "Ativo";
             this.cbxativo.UseVisualStyleBackColor = true;
             // 
+            // cbGenero
+            // 
+            this.cbGenero.FormattingEnabled = true;
+            this.cbGenero.Location = new System.Drawing.Point(87, 75);
+            this.cbGenero.Name = "cbGenero";
+            this.cbGenero.Size = new System.Drawing.Size(135, 21);
+            this.cbGenero.TabIndex = 17;
+            // 
             // cadLivros
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1370, 620);
+            this.Controls.Add(this.cbGenero);
             this.Controls.Add(this.cbxativo);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtAno);
             this.Controls.Add(this.txtEditora);
             this.Controls.Add(this.txtAutor);
             this.Controls.Add(this.txtLivro);
-            this.Controls.Add(this.txtGenero);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -215,13 +205,12 @@ namespace Biblioteca
 		private System.Windows.Forms.Label label3;
 		private System.Windows.Forms.Label label4;
 		private System.Windows.Forms.Label label5;
-		private System.Windows.Forms.TextBox txtGenero;
 		private System.Windows.Forms.TextBox txtLivro;
 		private System.Windows.Forms.TextBox txtAutor;
 		private System.Windows.Forms.TextBox txtEditora;
 		private System.Windows.Forms.TextBox txtAno;
 		private System.Windows.Forms.Button button1;
-		private System.Windows.Forms.Button button2;
         private System.Windows.Forms.CheckBox cbxativo;
+        private System.Windows.Forms.ComboBox cbGenero;
     }
 }

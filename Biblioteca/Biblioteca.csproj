@@ -69,6 +69,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="adcLivros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adcLivros.Designer.cs">
+      <DependentUpon>adcLivros.cs</DependentUpon>
+    </Compile>
     <Compile Include="cadLivros.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,6 +119,21 @@
     <Compile Include="Transacao.Designer.cs">
       <DependentUpon>Transacao.cs</DependentUpon>
     </Compile>
+    <Compile Include="VizualizarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VizualizarCliente.Designer.cs">
+      <DependentUpon>VizualizarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vizualizarLivros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vizualizarLivros.Designer.cs">
+      <DependentUpon>vizualizarLivros.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="adcLivros.resx">
+      <DependentUpon>adcLivros.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="cadLivros.resx">
       <DependentUpon>cadLivros.cs</DependentUpon>
     </EmbeddedResource>
@@ -143,6 +164,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Transacao.resx">
       <DependentUpon>Transacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VizualizarCliente.resx">
+      <DependentUpon>VizualizarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vizualizarLivros.resx">
+      <DependentUpon>vizualizarLivros.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

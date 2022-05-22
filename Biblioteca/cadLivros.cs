@@ -1,6 +1,7 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
 using System.Configuration;
+using System.Data;
 using System.Windows.Forms;
 
 namespace Biblioteca
@@ -14,8 +15,27 @@ namespace Biblioteca
 
         private void cadLivros_Load(object sender, EventArgs e)
         {
+			String conn = ConfigurationManager.ConnectionStrings["MySQLConnectionString"].ToString();
+			MySqlConnection conexao = new MySqlConnection(conn);
 
-        }
+			
+				conexao.Open();
+				MySqlCommand comando = new MySqlCommand();
+				comando = conexao.CreateCommand();
+
+				comando.CommandText = "select * from genero_livro";
+				//comando.Parameters.AddWithValue("tipotransacao", txttipo_transacao.Text.Trim());
+				MySqlDataReader dr = comando.ExecuteReader();
+				DataTable dt = new DataTable();
+				dt.Load(dr);
+				cbGenero.DisplayMember = "nm_genero";
+				cbGenero.DataSource = dt;
+
+			cbGenero.SelectedIndex = -1;
+
+
+		
+		}
 
         private void button1_Click(object sender, EventArgs e)
         {
