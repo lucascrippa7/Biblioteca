@@ -43,3 +43,7 @@ C:\Users\lucas\source\repos\Biblioteca\Biblioteca\bin\Debug\Microsoft.IdentityMo
 C:\Users\lucas\source\repos\Biblioteca\Biblioteca\obj\Debug\Biblioteca.adcLivros.resources
 C:\Users\lucas\source\repos\Biblioteca\Biblioteca\obj\Debug\Biblioteca.vizualizarLivros.resources
 C:\Users\lucas\source\repos\Biblioteca\Biblioteca\obj\Debug\Biblioteca.VizualizarCliente.resources
+C:\Users\lucas\source\repos\Biblioteca\Biblioteca\obj\Debug\Biblioteca.VizualizarGenero.resources
+C:\Users\lucas\source\repos\Biblioteca\Biblioteca\obj\Debug\Biblioteca.VizualizarTransacao.resources
+C:\Users\lucas\source\repos\Biblioteca\Biblioteca\obj\Debug\Biblioteca.usuario.resources
+C:\Users\lucas\source\repos\Biblioteca\Biblioteca\obj\Debug\Biblioteca.VizualizarUsuario.resources

@@ -60,6 +60,11 @@ namespace Biblioteca
 
 		}
 
-   
+        private void button1_Click(object sender, EventArgs e)
+        {
+			adcLivros frm = new adcLivros();
+			frm.Show();
+			
+        }
     }
 }

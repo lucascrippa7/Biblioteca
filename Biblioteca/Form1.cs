@@ -43,20 +43,18 @@ namespace Biblioteca
 			var fmrtipotransacao = Application.OpenForms["TipoTransacao"];
 			var fmrvizualizarLivros = Application.OpenForms["vizualizarLivros"];
 			var fmrVizualizarClientes = Application.OpenForms["VizualizarCliente"];
+			var fmrVizualizarGenero = Application.OpenForms["VizualizarGenero"];
+			var fmrVizualizarTransacao = Application.OpenForms["VizualizarTransacao"];
+			var fmrUsuario = Application.OpenForms["usuario"];
+			var fmrVizualizarUsuario = Application.OpenForms["VizualizarUsuario"];
 
-			if ((fmrcadGenero == null) && (fmrcliente == null) && (fmrcadlivro == null) && (fmrtransacao == null) && (fmrtipotransacao == null) && (fmrvizualizarLivros == null) && (fmrVizualizarClientes == null))
+			if ((fmrcadGenero == null) && (fmrcliente == null) && (fmrcadlivro == null) && (fmrtransacao == null) && (fmrtipotransacao == null) && (fmrvizualizarLivros == null) && (fmrVizualizarClientes == null) && (fmrVizualizarGenero == null) && (fmrVizualizarTransacao == null) && (fmrUsuario == null) && (fmrVizualizarUsuario == null))
 			{
 				novo.Show();
 			}
-
-
-
 		}
 
-		private void cadastroToolStripMenuItem_Click(object sender, EventArgs e)
-		{
-
-		}
+		
 
 		private void clienteToolStripMenuItem_Click(object sender, EventArgs e)
 		{
@@ -70,8 +68,12 @@ namespace Biblioteca
 			var fmrtipotransacao = Application.OpenForms["TipoTransacao"];
 			var fmrvizualizarLivros = Application.OpenForms["vizualizarLivros"];
 			var fmrVizualizarClientes = Application.OpenForms["VizualizarCliente"];
+			var fmrVizualizarGenero = Application.OpenForms["VizualizarGenero"];
+			var fmrVizualizarTransacao = Application.OpenForms["VizualizarTransacao"];
+			var fmrUsuario = Application.OpenForms["usuario"];
+			var fmrVizualizarUsuario = Application.OpenForms["VizualizarUsuario"];
 
-			if ((fmrcadGenero == null) && (fmrcliente == null) && (fmrcadlivro == null) && (fmrtransacao == null) && (fmrtipotransacao == null) && (fmrvizualizarLivros == null) && (fmrVizualizarClientes == null))
+			if ((fmrcadGenero == null) && (fmrcliente == null) && (fmrcadlivro == null) && (fmrtransacao == null) && (fmrtipotransacao == null) && (fmrvizualizarLivros == null) && (fmrVizualizarClientes == null) && (fmrVizualizarGenero == null) && (fmrVizualizarTransacao == null) && (fmrUsuario == null) && (fmrVizualizarUsuario == null))
 			{
 				novo.Show();
 			}
@@ -89,8 +91,12 @@ namespace Biblioteca
 			var fmrtipotransacao = Application.OpenForms["TipoTransacao"];
 			var fmrvizualizarLivros = Application.OpenForms["vizualizarLivros"];
 			var fmrVizualizarClientes = Application.OpenForms["VizualizarCliente"];
+			var fmrVizualizarGenero = Application.OpenForms["VizualizarGenero"];
+			var fmrVizualizarTransacao = Application.OpenForms["VizualizarTransacao"];
+			var fmrUsuario = Application.OpenForms["usuario"];
+			var fmrVizualizarUsuario = Application.OpenForms["VizualizarUsuario"];
 
-			if ((fmrcadGenero == null) && (fmrcliente == null) && (fmrcadlivro == null) && (fmrtransacao == null) && (fmrtipotransacao == null) && (fmrvizualizarLivros == null) && (fmrVizualizarClientes == null))
+			if ((fmrcadGenero == null) && (fmrcliente == null) && (fmrcadlivro == null) && (fmrtransacao == null) && (fmrtipotransacao == null) && (fmrvizualizarLivros == null) && (fmrVizualizarClientes == null) && (fmrVizualizarGenero == null) && (fmrVizualizarTransacao == null) && (fmrUsuario == null) && (fmrVizualizarUsuario == null))
 			{
 				novo.Show();
 			}
@@ -108,8 +114,12 @@ namespace Biblioteca
 			var fmrtipotransacao = Application.OpenForms["TipoTransacao"];
 			var fmrvizualizarLivros = Application.OpenForms["vizualizarLivros"];
 			var fmrVizualizarClientes = Application.OpenForms["VizualizarCliente"];
+			var fmrVizualizarGenero = Application.OpenForms["VizualizarGenero"];
+			var fmrVizualizarTransacao = Application.OpenForms["VizualizarTransacao"];
+			var fmrUsuario = Application.OpenForms["usuario"];
+			var fmrVizualizarUsuario = Application.OpenForms["VizualizarUsuario"];
 
-			if ((fmrcadGenero == null) && (fmrcliente == null) && (fmrcadlivro == null) && (fmrtransacao == null) && (fmrtipotransacao == null) && (fmrvizualizarLivros == null) && (fmrVizualizarClientes == null))
+			if ((fmrcadGenero == null) && (fmrcliente == null) && (fmrcadlivro == null) && (fmrtransacao == null) && (fmrtipotransacao == null) && (fmrvizualizarLivros == null) && (fmrVizualizarClientes == null) && (fmrVizualizarGenero == null) && (fmrVizualizarTransacao == null) && (fmrUsuario == null) && (fmrVizualizarUsuario == null))
 			{
 				novo.Show();
 			}
@@ -119,6 +129,7 @@ namespace Biblioteca
 		{
 			Transacao novo = new Transacao();
 			novo.MdiParent = this;
+
 			var fmrcadGenero = Application.OpenForms["GeneroLivro"];
 			var fmrcliente = Application.OpenForms["Cliente"];
 			var fmrcadlivro = Application.OpenForms["cadLivros"];
@@ -126,8 +137,12 @@ namespace Biblioteca
 			var fmrtipotransacao = Application.OpenForms["TipoTransacao"];
 			var fmrvizualizarLivros = Application.OpenForms["vizualizarLivros"];
 			var fmrVizualizarClientes = Application.OpenForms["VizualizarCliente"];
+			var fmrVizualizarGenero = Application.OpenForms["VizualizarGenero"];
+			var fmrVizualizarTransacao = Application.OpenForms["VizualizarTransacao"];
+			var fmrUsuario = Application.OpenForms["usuario"];
+			var fmrVizualizarUsuario = Application.OpenForms["VizualizarUsuario"];
 
-			if ((fmrcadGenero == null) && (fmrcliente == null) && (fmrcadlivro == null) && (fmrtransacao == null) && (fmrtipotransacao == null) && (fmrvizualizarLivros == null) && (fmrVizualizarClientes == null))
+			if ((fmrcadGenero == null) && (fmrcliente == null) && (fmrcadlivro == null) && (fmrtransacao == null) && (fmrtipotransacao == null) && (fmrvizualizarLivros == null) && (fmrVizualizarClientes == null) && (fmrVizualizarGenero == null) && (fmrVizualizarTransacao == null) && (fmrUsuario == null) && (fmrVizualizarUsuario == null))
 			{
 				novo.Show();
 			}
@@ -145,8 +160,12 @@ namespace Biblioteca
 			var fmrtipotransacao = Application.OpenForms["TipoTransacao"];
 			var fmrvizualizarLivros = Application.OpenForms["vizualizarLivros"];
 			var fmrVizualizarClientes = Application.OpenForms["VizualizarCliente"];
+			var fmrVizualizarGenero = Application.OpenForms["VizualizarGenero"];
+			var fmrVizualizarTransacao = Application.OpenForms["VizualizarTransacao"];
+			var fmrUsuario = Application.OpenForms["usuario"];
+			var fmrVizualizarUsuario = Application.OpenForms["VizualizarUsuario"];
 
-			if ((fmrcadGenero == null) && (fmrcliente == null) && (fmrcadlivro == null) && (fmrtransacao == null) && (fmrtipotransacao == null) && (fmrvizualizarLivros == null) && (fmrVizualizarClientes == null))
+			if ((fmrcadGenero == null) && (fmrcliente == null) && (fmrcadlivro == null) && (fmrtransacao == null) && (fmrtipotransacao == null) && (fmrvizualizarLivros == null) && (fmrVizualizarClientes == null) && (fmrVizualizarGenero == null) && (fmrVizualizarTransacao == null) && (fmrUsuario == null) && (fmrVizualizarUsuario == null))
 			{
 				novo.Show();
 			}
@@ -164,8 +183,105 @@ namespace Biblioteca
 			var fmrtipotransacao = Application.OpenForms["TipoTransacao"];
 			var fmrvizualizarLivros = Application.OpenForms["vizualizarLivros"];
 			var fmrVizualizarClientes = Application.OpenForms["VizualizarCliente"];
+			var fmrVizualizarGenero = Application.OpenForms["VizualizarGenero"];
+			var fmrVizualizarTransacao = Application.OpenForms["VizualizarTransacao"];
+			var fmrUsuario = Application.OpenForms["usuario"];
+			var fmrVizualizarUsuario = Application.OpenForms["VizualizarUsuario"];
 
-			if ((fmrcadGenero == null) && (fmrcliente == null) && (fmrcadlivro == null) && (fmrtransacao == null) && (fmrtipotransacao == null) && (fmrvizualizarLivros == null) && (fmrVizualizarClientes == null))
+			if ((fmrcadGenero == null) && (fmrcliente == null) && (fmrcadlivro == null) && (fmrtransacao == null) && (fmrtipotransacao == null) && (fmrvizualizarLivros == null) && (fmrVizualizarClientes == null) && (fmrVizualizarGenero == null) && (fmrVizualizarTransacao == null) && (fmrUsuario == null) && (fmrVizualizarUsuario == null))
+			{
+				novo.Show();
+			}
+		}
+
+        private void gênerosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+			VizualizarGenero novo = new VizualizarGenero();
+			novo.MdiParent = this;
+
+			var fmrcadGenero = Application.OpenForms["GeneroLivro"];
+			var fmrcliente = Application.OpenForms["Cliente"];
+			var fmrcadlivro = Application.OpenForms["cadLivros"];
+			var fmrtransacao = Application.OpenForms["Transacao"];
+			var fmrtipotransacao = Application.OpenForms["TipoTransacao"];
+			var fmrvizualizarLivros = Application.OpenForms["vizualizarLivros"];
+			var fmrVizualizarClientes = Application.OpenForms["VizualizarCliente"];
+			var fmrVizualizarGenero = Application.OpenForms["VizualizarGenero"];
+			var fmrVizualizarTransacao = Application.OpenForms["VizualizarTransacao"];
+			var fmrUsuario = Application.OpenForms["usuario"];
+			var fmrVizualizarUsuario = Application.OpenForms["VizualizarUsuario"];
+
+			if ((fmrcadGenero == null) && (fmrcliente == null) && (fmrcadlivro == null) && (fmrtransacao == null) && (fmrtipotransacao == null) && (fmrvizualizarLivros == null) && (fmrVizualizarClientes == null) && (fmrVizualizarGenero == null) && (fmrVizualizarTransacao == null) && (fmrUsuario == null) && (fmrVizualizarUsuario == null))
+			{
+				novo.Show();
+			}
+		}
+
+        private void transaçõesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+			VizualizarTransacao novo = new VizualizarTransacao();
+			novo.MdiParent = this;
+
+			var fmrcadGenero = Application.OpenForms["GeneroLivro"];
+			var fmrcliente = Application.OpenForms["Cliente"];
+			var fmrcadlivro = Application.OpenForms["cadLivros"];
+			var fmrtransacao = Application.OpenForms["Transacao"];
+			var fmrtipotransacao = Application.OpenForms["TipoTransacao"];
+			var fmrvizualizarLivros = Application.OpenForms["vizualizarLivros"];
+			var fmrVizualizarClientes = Application.OpenForms["VizualizarCliente"];
+			var fmrVizualizarGenero = Application.OpenForms["VizualizarGenero"];
+			var fmrVizualizarTransacao = Application.OpenForms["VizualizarTransacao"];
+			var fmrUsuario = Application.OpenForms["usuario"];
+			var fmrVizualizarUsuario = Application.OpenForms["VizualizarUsuario"];
+
+			if ((fmrcadGenero == null) && (fmrcliente == null) && (fmrcadlivro == null) && (fmrtransacao == null) && (fmrtipotransacao == null) && (fmrvizualizarLivros == null) && (fmrVizualizarClientes == null) && (fmrVizualizarGenero == null) && (fmrVizualizarTransacao == null) && (fmrUsuario == null) && (fmrVizualizarUsuario == null))
+			{
+				novo.Show();
+			}
+		}
+
+        private void usuarioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+			usuario novo = new usuario();
+			novo.MdiParent = this;
+
+			var fmrcadGenero = Application.OpenForms["GeneroLivro"];
+			var fmrcliente = Application.OpenForms["Cliente"];
+			var fmrcadlivro = Application.OpenForms["cadLivros"];
+			var fmrtransacao = Application.OpenForms["Transacao"];
+			var fmrtipotransacao = Application.OpenForms["TipoTransacao"];
+			var fmrvizualizarLivros = Application.OpenForms["vizualizarLivros"];
+			var fmrVizualizarClientes = Application.OpenForms["VizualizarCliente"];
+			var fmrVizualizarGenero = Application.OpenForms["VizualizarGenero"];
+			var fmrVizualizarTransacao = Application.OpenForms["VizualizarTransacao"];
+			var fmrUsuario = Application.OpenForms["usuario"];
+			var fmrVizualizarUsuario = Application.OpenForms["VizualizarUsuario"];
+
+			if ((fmrcadGenero == null) && (fmrcliente == null) && (fmrcadlivro == null) && (fmrtransacao == null) && (fmrtipotransacao == null) && (fmrvizualizarLivros == null) && (fmrVizualizarClientes == null) && (fmrVizualizarGenero == null) && (fmrVizualizarTransacao == null) && (fmrUsuario == null) && (fmrVizualizarUsuario == null))
+			{
+				novo.Show();
+			}
+		}
+
+        private void usuárioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+			VizualizarUsuario novo = new VizualizarUsuario();
+			novo.MdiParent = this;
+
+			var fmrcadGenero = Application.OpenForms["GeneroLivro"];
+			var fmrcliente = Application.OpenForms["Cliente"];
+			var fmrcadlivro = Application.OpenForms["cadLivros"];
+			var fmrtransacao = Application.OpenForms["Transacao"];
+			var fmrtipotransacao = Application.OpenForms["TipoTransacao"];
+			var fmrvizualizarLivros = Application.OpenForms["vizualizarLivros"];
+			var fmrVizualizarClientes = Application.OpenForms["VizualizarCliente"];
+			var fmrVizualizarGenero = Application.OpenForms["VizualizarGenero"];
+			var fmrVizualizarTransacao = Application.OpenForms["VizualizarTransacao"];
+			var fmrUsuario = Application.OpenForms["usuario"];
+			var fmrVizualizarUsuario = Application.OpenForms["VizualizarUsuario"];
+
+			if ((fmrcadGenero == null) && (fmrcliente == null) && (fmrcadlivro == null) && (fmrtransacao == null) && (fmrtipotransacao == null) && (fmrvizualizarLivros == null) && (fmrVizualizarClientes == null) && (fmrVizualizarGenero == null) && (fmrVizualizarTransacao == null) && (fmrUsuario == null) && (fmrVizualizarUsuario == null))
 			{
 				novo.Show();
 			}
