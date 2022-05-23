@@ -28,6 +28,7 @@ namespace Biblioteca
 				MySqlDataReader dr = comando.ExecuteReader();
 				DataTable dt = new DataTable();
 				dt.Load(dr);
+				cbGenero.ValueMember = "id_genero";
 				cbGenero.DisplayMember = "nm_genero";
 				cbGenero.DataSource = dt;
 
@@ -48,11 +49,12 @@ namespace Biblioteca
 				MySqlCommand comando = new MySqlCommand();
 				comando = conexao.CreateCommand();
 
-				comando.CommandText = "insert into livro(nm_livro, nm_autor, nm_editora, nr_ano_edicao, ativo ) values(@livro, @autor, @editora, @ano, @ativo);";
+				comando.CommandText = "insert into livro(nm_livro, nm_autor, nm_editora, nr_ano_edicao, ativo, id_genero ) values(@livro, @autor, @editora, @ano, @ativo, @idgenero);";
 				comando.Parameters.AddWithValue("livro", txtLivro.Text.Trim());
 				comando.Parameters.AddWithValue("autor", txtAutor.Text.Trim());
 				comando.Parameters.AddWithValue("editora", txtEditora.Text.Trim());
 				comando.Parameters.AddWithValue("ano", txtAno.Text.Trim());
+				comando.Parameters.AddWithValue("idgenero", cbGenero.SelectedValue);
 
 
                 if (cbxativo.Checked)
