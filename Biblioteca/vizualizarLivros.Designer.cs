@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.dgDados = new System.Windows.Forms.DataGridView();
+            this.txtBuscaLivros = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgDados)).BeginInit();
             this.SuspendLayout();
             // 
@@ -40,11 +41,21 @@
             this.dgDados.Size = new System.Drawing.Size(1009, 497);
             this.dgDados.TabIndex = 0;
             // 
+            // txtBuscaLivros
+            // 
+            this.txtBuscaLivros.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBuscaLivros.Location = new System.Drawing.Point(12, 555);
+            this.txtBuscaLivros.Name = "txtBuscaLivros";
+            this.txtBuscaLivros.Size = new System.Drawing.Size(726, 20);
+            this.txtBuscaLivros.TabIndex = 1;
+            this.txtBuscaLivros.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
             // vizualizarLivros
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1033, 535);
+            this.ClientSize = new System.Drawing.Size(1033, 607);
+            this.Controls.Add(this.txtBuscaLivros);
             this.Controls.Add(this.dgDados);
             this.Name = "vizualizarLivros";
             this.Text = "vizualizarLivros";
@@ -52,11 +63,13 @@
             this.Load += new System.EventHandler(this.vizualizarLivros_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgDados)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.DataGridView dgDados;
+        private System.Windows.Forms.TextBox txtBuscaLivros;
     }
 }

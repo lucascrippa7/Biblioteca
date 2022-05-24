@@ -28,15 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmLogin));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.picLOgo = new System.Windows.Forms.PictureBox();
             this.lblUsuario = new System.Windows.Forms.Label();
             this.lblSenha = new System.Windows.Forms.Label();
-            this.smbUsuarios = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.cbUsuarios = new System.Windows.Forms.ComboBox();
+            this.txtSenha = new System.Windows.Forms.TextBox();
             this.btnEntrar = new System.Windows.Forms.Button();
             this.btnSair = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLOgo)).BeginInit();
             this.SuspendLayout();
@@ -75,21 +75,21 @@
             this.lblSenha.TabIndex = 3;
             this.lblSenha.Text = "Senha";
             // 
-            // smbUsuarios
+            // cbUsuarios
             // 
-            this.smbUsuarios.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.smbUsuarios.FormattingEnabled = true;
-            this.smbUsuarios.Location = new System.Drawing.Point(536, 167);
-            this.smbUsuarios.Name = "smbUsuarios";
-            this.smbUsuarios.Size = new System.Drawing.Size(190, 21);
-            this.smbUsuarios.TabIndex = 4;
+            this.cbUsuarios.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbUsuarios.FormattingEnabled = true;
+            this.cbUsuarios.Location = new System.Drawing.Point(536, 167);
+            this.cbUsuarios.Name = "cbUsuarios";
+            this.cbUsuarios.Size = new System.Drawing.Size(190, 21);
+            this.cbUsuarios.TabIndex = 4;
             // 
-            // textBox1
+            // txtSenha
             // 
-            this.textBox1.Location = new System.Drawing.Point(536, 231);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(190, 20);
-            this.textBox1.TabIndex = 5;
+            this.txtSenha.Location = new System.Drawing.Point(536, 231);
+            this.txtSenha.Name = "txtSenha";
+            this.txtSenha.Size = new System.Drawing.Size(190, 20);
+            this.txtSenha.TabIndex = 5;
             // 
             // btnEntrar
             // 
@@ -99,6 +99,7 @@
             this.btnEntrar.TabIndex = 6;
             this.btnEntrar.Text = "Entrar";
             this.btnEntrar.UseVisualStyleBackColor = true;
+            this.btnEntrar.Click += new System.EventHandler(this.btnEntrar_Click);
             // 
             // btnSair
             // 
@@ -109,26 +110,18 @@
             this.btnSair.Text = "Sair";
             this.btnSair.UseVisualStyleBackColor = true;
             // 
-            // panel1
-            // 
-            this.panel1.Location = new System.Drawing.Point(511, 328);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(233, 99);
-            this.panel1.TabIndex = 8;
-            // 
             // FrmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Biblioteca.Properties.Resources._1533036263_013678_1533080649_album_normal_recorte1;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(800, 516);
+            this.ClientSize = new System.Drawing.Size(796, 512);
             this.ControlBox = false;
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnSair);
             this.Controls.Add(this.btnEntrar);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.smbUsuarios);
+            this.Controls.Add(this.txtSenha);
+            this.Controls.Add(this.cbUsuarios);
             this.Controls.Add(this.lblSenha);
             this.Controls.Add(this.lblUsuario);
             this.Controls.Add(this.picLOgo);
@@ -153,10 +146,9 @@
         private System.Windows.Forms.PictureBox picLOgo;
         private System.Windows.Forms.Label lblUsuario;
         private System.Windows.Forms.Label lblSenha;
-        private System.Windows.Forms.ComboBox smbUsuarios;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ComboBox cbUsuarios;
+        private System.Windows.Forms.TextBox txtSenha;
         private System.Windows.Forms.Button btnEntrar;
         private System.Windows.Forms.Button btnSair;
-        private System.Windows.Forms.Panel panel1;
     }
 }

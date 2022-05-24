@@ -14,6 +14,8 @@ namespace Biblioteca
 {
 	public partial class Transacao : Form
 	{
+		int id_tipo_trans = 0;
+		int id_cli = 0;
 
 		String conn = ConfigurationManager.ConnectionStrings["MySQLConnectionString"].ToString();
 
@@ -37,8 +39,6 @@ namespace Biblioteca
 			DateTime date = DateTime.Now;
 			string date_str = date.ToString("dd/MM/yyyy");
 			txtdata.Text = date_str;
-			
-
 
 			String conn = ConfigurationManager.ConnectionStrings["MySQLConnectionString"].ToString();
 			MySqlConnection conexao = new MySqlConnection(conn);
@@ -59,7 +59,6 @@ namespace Biblioteca
 
 			cbtransacao.SelectedIndex = -1;
 
-
 			comando.CommandText = "select * from cliente";
 			MySqlDataReader drr = comando.ExecuteReader();
 			DataTable dtt = new DataTable();
@@ -70,31 +69,39 @@ namespace Biblioteca
 
 			cbCliente.SelectedIndex = -1;
 
-
 			this.WindowState = FormWindowState.Maximized;
 
 			listagrid();
-
 		}
 
         private void button1_Click(object sender, EventArgs e)
         {
 			adcLivros frm = new adcLivros();
-			frm.Show();
-			
+			frm.Show();			
         }
-
-
 
 
 		public void listagrid()
 		{
-			String strSQL = "select lv.id_livro";
+			if (id_tipo_trans == 0 || id_cli == 0)
+            {
+				return;
+            }
+
+			dgLivros.DataSource = null;
+			dgLivros.Rows.Clear();
+			dgLivros.Columns.Clear();
+
+			String strSQL = "select distinct lv.id_livro";
 			strSQL = strSQL + " ,lv.nm_livro";
 			strSQL = strSQL + " ,gl.nm_genero";
 			strSQL = strSQL + " from livro lv";
 			strSQL = strSQL + " left join genero_livro gl";
 			strSQL = strSQL + " on gl.id_genero = lv.id_genero";
+			strSQL = strSQL + " where 1 = 1";
+			if (id_tipo_trans == 2) { strSQL = strSQL + " and lv.id_livro not in (select id_livro from transacao where id_tipo_transacao = 2)"; }
+			if (id_tipo_trans == 3) { strSQL = strSQL + " and lv.id_livro in (select id_livro from transacao where id_tipo_transacao = 2 and id_cliente =" + cbCliente.SelectedValue + ")"; }
+
 			strSQL = strSQL + " order by lv.nm_livro, gl.nm_genero asc;";
 
 
@@ -110,6 +117,7 @@ namespace Biblioteca
 
 				dgLivros.DataSource = dtlista;
 
+				dgLivros.AllowUserToAddRows = false; // RETIRAR LINHA EMBRANCO NO DATAGRID
 
 				var col = new DataGridViewCheckBoxColumn();
 				col.Name = "Coluna";
@@ -143,26 +151,82 @@ namespace Biblioteca
 
         private void button3_Click(object sender, EventArgs e)
         {
+			String conn = ConfigurationManager.ConnectionStrings["MySQLConnectionString"].ToString();
+			MySqlConnection conexao = new MySqlConnection(conn);
 
+
+			conexao.Open();
+			MySqlCommand comando = new MySqlCommand();
+			comando = conexao.CreateCommand();
+
+			String strSQL = "";
 			foreach (DataGridViewRow linha in dgLivros.Rows)
 			{
-
 				if (linha.Cells[0].Value == null)
                 {
 					int nada = 0; 
                 }
 				else
 				{
-					MessageBox.Show(linha.Cells[1].Value.ToString() + " -- " + linha.Cells[2].Value.ToString());
+					strSQL = "INSERT INTO `projetobiblioteca`.`transacao`";
+					strSQL = strSQL + " (`id_tipo_transacao`,";
+					strSQL = strSQL + " `dt_transacao`,";
+					strSQL = strSQL + " `id_cliente`,";
+					strSQL = strSQL + " `id_livro`)";
+					strSQL = strSQL + " VALUES";
+					strSQL = strSQL + " (" + cbtransacao.SelectedValue + ",";
+					strSQL = strSQL + "'" + DateTime.Today.Year + "/" + DateTime.Today.Month + "/" + DateTime.Today.Day + "',";
+					strSQL = strSQL + cbCliente.SelectedValue + ",";
+					strSQL = strSQL + linha.Cells[1].Value + ");";
+					conexao = new MySqlConnection(conn);
+					objCommand = new MySqlCommand(strSQL, conexao);
 
+					if (linha.Cells[0].Value != null)
+                    {							
+						MySqlDataAdapter objAdp = new MySqlDataAdapter(objCommand);
+						DataTable dtlista = new DataTable();
+						objAdp.Fill(dtlista);
+					}
 				}
-			}
 
+			}
 			foreach (DataGridViewRow linha in dgLivros.Rows)
 			{
 				linha.Cells[0].Value = null;
-			}
+			}			
+			listagrid();
+		}
 
+        private void txtPesquisaLivro_TextChanged(object sender, EventArgs e)
+        {
+			dgLivros.ClearSelection();
+			foreach (DataGridViewRow linha in dgLivros.Rows)
+			{
+				if (linha.Cells[2].Value == null)
+				{
+					int nada = 0;
+				}
+                else
+                {
+					if (String.Equals(linha.Cells[2].Value.ToString().ToLower(),txtPesquisaLivro.Text.ToLower()))
+					{						
+						linha.Selected = true;
+					}
+				}				
+			}
+		}
+
+        private void cbtransacao_SelectedValueChanged(object sender, EventArgs e)
+        {
+			id_tipo_trans = Convert.ToInt16(cbtransacao.SelectedValue);
+			listagrid();
+
+		}
+
+        private void cbCliente_SelectedIndexChanged(object sender, EventArgs e)
+        {
+			id_cli = Convert.ToInt16(cbCliente.SelectedValue);
+			listagrid();
 		}
     }
 }

@@ -60,5 +60,28 @@ namespace Biblioteca
 
 
         }
+
+        private void txtBuscaCliente_TextChanged(object sender, EventArgs e)
+        {
+            String strSQL = "Select * from cliente where nm_cliente  LIKE '%" + txtBuscaCliente.Text + "%'"; 
+
+            conexao = new MySqlConnection(conn);
+            objCommand = new MySqlCommand(strSQL, conexao);
+
+            try
+            {
+                MySqlDataAdapter objAdp = new MySqlDataAdapter(objCommand);
+                DataTable dtlista = new DataTable();
+
+                objAdp.Fill(dtlista);
+
+                dgDadosCliente.DataSource = dtlista;
+
+            }
+            catch
+            {
+                MessageBox.Show("Deu erro");
+            }
+        }
     }
 }

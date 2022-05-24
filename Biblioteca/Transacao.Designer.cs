@@ -40,6 +40,7 @@ namespace Biblioteca
             this.dgLivros = new System.Windows.Forms.DataGridView();
             this.button3 = new System.Windows.Forms.Button();
             this.txtdata = new System.Windows.Forms.TextBox();
+            this.txtPesquisaLivro = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgLivros)).BeginInit();
             this.SuspendLayout();
             // 
@@ -104,6 +105,7 @@ namespace Biblioteca
             this.cbtransacao.Name = "cbtransacao";
             this.cbtransacao.Size = new System.Drawing.Size(206, 21);
             this.cbtransacao.TabIndex = 1;
+            this.cbtransacao.SelectedValueChanged += new System.EventHandler(this.cbtransacao_SelectedValueChanged);
             // 
             // cbCliente
             // 
@@ -112,11 +114,12 @@ namespace Biblioteca
             this.cbCliente.Name = "cbCliente";
             this.cbCliente.Size = new System.Drawing.Size(477, 21);
             this.cbCliente.TabIndex = 3;
+            this.cbCliente.SelectedIndexChanged += new System.EventHandler(this.cbCliente_SelectedIndexChanged);
             // 
             // dgLivros
             // 
             this.dgLivros.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgLivros.Location = new System.Drawing.Point(130, 227);
+            this.dgLivros.Location = new System.Drawing.Point(130, 256);
             this.dgLivros.Name = "dgLivros";
             this.dgLivros.Size = new System.Drawing.Size(477, 314);
             this.dgLivros.TabIndex = 15;
@@ -140,11 +143,21 @@ namespace Biblioteca
             this.txtdata.Size = new System.Drawing.Size(100, 20);
             this.txtdata.TabIndex = 17;
             // 
+            // txtPesquisaLivro
+            // 
+            this.txtPesquisaLivro.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtPesquisaLivro.Location = new System.Drawing.Point(130, 216);
+            this.txtPesquisaLivro.Name = "txtPesquisaLivro";
+            this.txtPesquisaLivro.Size = new System.Drawing.Size(477, 20);
+            this.txtPesquisaLivro.TabIndex = 18;
+            this.txtPesquisaLivro.TextChanged += new System.EventHandler(this.txtPesquisaLivro_TextChanged);
+            // 
             // Transacao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1370, 620);
+            this.Controls.Add(this.txtPesquisaLivro);
             this.Controls.Add(this.txtdata);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.dgLivros);
@@ -179,5 +192,6 @@ namespace Biblioteca
         private System.Windows.Forms.DataGridView dgLivros;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.TextBox txtdata;
+        private System.Windows.Forms.TextBox txtPesquisaLivro;
     }
 }

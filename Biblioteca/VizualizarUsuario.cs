@@ -57,5 +57,30 @@ namespace Biblioteca
 
 
         }
+
+        private void txtBuscaUsuario_TextChanged(object sender, EventArgs e)
+        {
+
+            String strSQL = "select * from usuario where nome  LIKE '%" + txtBuscaUsuario.Text + "%'";
+
+            conexao = new MySqlConnection(conn);
+            objCommand = new MySqlCommand(strSQL, conexao);
+
+            try
+            {
+                MySqlDataAdapter objAdp = new MySqlDataAdapter(objCommand);
+                DataTable dtlista = new DataTable();
+
+                objAdp.Fill(dtlista);
+
+                dgVizualizarUsuario.DataSource = dtlista;
+
+            }
+            catch
+            {
+                MessageBox.Show("Deu erro");
+            }
+
+        }
     }
 }
