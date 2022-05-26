@@ -29,7 +29,8 @@
         private void InitializeComponent()
         {
             this.dgDadosCliente = new System.Windows.Forms.DataGridView();
-            this.txtBuscaCliente = new System.Windows.Forms.TextBox();
+            this.btnDeletar = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgDadosCliente)).BeginInit();
             this.SuspendLayout();
             // 
@@ -38,24 +39,36 @@
             this.dgDadosCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgDadosCliente.Location = new System.Drawing.Point(12, 12);
             this.dgDadosCliente.Name = "dgDadosCliente";
-            this.dgDadosCliente.Size = new System.Drawing.Size(1205, 433);
+            this.dgDadosCliente.Size = new System.Drawing.Size(1354, 433);
             this.dgDadosCliente.TabIndex = 0;
             // 
-            // txtBuscaCliente
+            // btnDeletar
             // 
-            this.txtBuscaCliente.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtBuscaCliente.Location = new System.Drawing.Point(12, 483);
-            this.txtBuscaCliente.Name = "txtBuscaCliente";
-            this.txtBuscaCliente.Size = new System.Drawing.Size(1086, 20);
-            this.txtBuscaCliente.TabIndex = 1;
-            this.txtBuscaCliente.TextChanged += new System.EventHandler(this.txtBuscaCliente_TextChanged);
+            this.btnDeletar.Location = new System.Drawing.Point(613, 467);
+            this.btnDeletar.Name = "btnDeletar";
+            this.btnDeletar.Size = new System.Drawing.Size(75, 23);
+            this.btnDeletar.TabIndex = 5;
+            this.btnDeletar.Text = "Deletar";
+            this.btnDeletar.UseVisualStyleBackColor = true;
+            this.btnDeletar.Click += new System.EventHandler(this.btnDeletar_Click);
+            // 
+            // btnUpdate
+            // 
+            this.btnUpdate.Location = new System.Drawing.Point(496, 470);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(75, 23);
+            this.btnUpdate.TabIndex = 4;
+            this.btnUpdate.Text = "Atualizar";
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // VizualizarCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1220, 670);
-            this.Controls.Add(this.txtBuscaCliente);
+            this.ClientSize = new System.Drawing.Size(1378, 670);
+            this.Controls.Add(this.btnDeletar);
+            this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.dgDadosCliente);
             this.Name = "VizualizarCliente";
             this.Text = "VizualizarCliente";
@@ -63,13 +76,13 @@
             this.Load += new System.EventHandler(this.VizualizarCliente_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgDadosCliente)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.DataGridView dgDadosCliente;
-        private System.Windows.Forms.TextBox txtBuscaCliente;
+        private System.Windows.Forms.Button btnDeletar;
+        private System.Windows.Forms.Button btnUpdate;
     }
 }

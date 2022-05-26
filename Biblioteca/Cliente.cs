@@ -21,6 +21,11 @@ namespace Biblioteca
 
 		private void btnClienteSalvar_Click(object sender, EventArgs e)
 		{
+
+			String datanascI = txtnascimento.Text;
+			DateTime datanasc = Convert.ToDateTime(datanascI);
+
+
 			String conn = ConfigurationManager.ConnectionStrings["MySQLConnectionString"].ToString();
 			MySqlConnection conexao = new MySqlConnection(conn);
 
@@ -35,7 +40,7 @@ namespace Biblioteca
                     "@cidade, @estado, @pais, @cep, @celular);";
 				comando.Parameters.AddWithValue("cliente", txtCLienteNome.Text.Trim());
 				comando.Parameters.AddWithValue("cpf", txtCPF.Text.Trim());
-				comando.Parameters.AddWithValue("dtnasc", txtnascimento.Text.Trim());
+				comando.Parameters.AddWithValue("dtnasc", datanasc.Year + "/" + datanasc.Month + "/" + datanasc.Day + "'");
 				comando.Parameters.AddWithValue("endereco", TxtClienteEndereco.Text.Trim());
 				comando.Parameters.AddWithValue("numero", txtClienteNumero.Text.Trim());
 				comando.Parameters.AddWithValue("complemento", txtClienteComplemento.Text.Trim());
@@ -61,5 +66,10 @@ namespace Biblioteca
 				conexao.Close();
 			}
 		}
-	}
+
+        private void Cliente_Load(object sender, EventArgs e)
+        {
+
+        }
+    }
 }

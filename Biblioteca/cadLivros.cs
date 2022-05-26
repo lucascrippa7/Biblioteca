@@ -49,23 +49,14 @@ namespace Biblioteca
 				MySqlCommand comando = new MySqlCommand();
 				comando = conexao.CreateCommand();
 
-				comando.CommandText = "insert into livro(nm_livro, nm_autor, nm_editora, nr_ano_edicao, ativo, id_genero ) values(@livro, @autor, @editora, @ano, @ativo, @idgenero);";
+				comando.CommandText = "insert into livro(nm_livro, nm_autor, nm_editora, nr_ano_edicao, id_genero ) values(@livro, @autor, @editora, @ano, @idgenero);";
 				comando.Parameters.AddWithValue("livro", txtLivro.Text.Trim());
 				comando.Parameters.AddWithValue("autor", txtAutor.Text.Trim());
 				comando.Parameters.AddWithValue("editora", txtEditora.Text.Trim());
 				comando.Parameters.AddWithValue("ano", txtAno.Text.Trim());
 				comando.Parameters.AddWithValue("idgenero", cbGenero.SelectedValue);
 
-
-                if (cbxativo.Checked)
-                {
-					comando.Parameters.AddWithValue("ativo", 1);
-                }
-                else
-                {
-					comando.Parameters.AddWithValue("ativo", 0);
-				}
-					
+				Console.WriteLine(comando);
 
 				int valorretorno = comando.ExecuteNonQuery();
 				if (valorretorno < 1)

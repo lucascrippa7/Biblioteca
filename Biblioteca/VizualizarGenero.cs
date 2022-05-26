@@ -49,6 +49,7 @@ namespace Biblioteca
 
             conexao = new MySqlConnection(conn);
             objCommand = new MySqlCommand(strSQL, conexao);
+            dgVizuGenero.AllowUserToAddRows = false;
 
             try
             {
@@ -68,30 +69,7 @@ namespace Biblioteca
 
         }
 
-        private void txtBuscaGenero_TextChanged(object sender, EventArgs e)
-        {
-           
-            String strSQL = "select * from genero_livro where nm_genero  LIKE '%" + txtBuscaGenero.Text + "%'";
-
-            conexao = new MySqlConnection(conn);
-            objCommand = new MySqlCommand(strSQL, conexao);
-
-            try
-            {
-                MySqlDataAdapter objAdp = new MySqlDataAdapter(objCommand);
-                DataTable dtlista = new DataTable();
-
-                objAdp.Fill(dtlista);
-
-                dgVizuGenero.DataSource = dtlista;
-
-            }
-            catch
-            {
-                MessageBox.Show("Deu erro");
-            }
-
-        }
+      
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {

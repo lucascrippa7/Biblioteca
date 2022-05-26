@@ -51,8 +51,6 @@ namespace Biblioteca
             this.lblCLienteCPF = new System.Windows.Forms.Label();
             this.txtCLienteNome = new System.Windows.Forms.TextBox();
             this.lblClienteNome = new System.Windows.Forms.Label();
-            this.txtClienteId = new System.Windows.Forms.TextBox();
-            this.lblCLienteId = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txtpais = new System.Windows.Forms.TextBox();
             this.txtnascimento = new System.Windows.Forms.TextBox();
@@ -61,7 +59,7 @@ namespace Biblioteca
             // txtClienteCelular
             // 
             this.txtClienteCelular.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtClienteCelular.Location = new System.Drawing.Point(551, 109);
+            this.txtClienteCelular.Location = new System.Drawing.Point(548, 59);
             this.txtClienteCelular.Mask = "(99) 00000-0000";
             this.txtClienteCelular.Name = "txtClienteCelular";
             this.txtClienteCelular.Size = new System.Drawing.Size(111, 20);
@@ -70,7 +68,7 @@ namespace Biblioteca
             // txtClienteBairro
             // 
             this.txtClienteBairro.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtClienteBairro.Location = new System.Drawing.Point(90, 219);
+            this.txtClienteBairro.Location = new System.Drawing.Point(87, 169);
             this.txtClienteBairro.Name = "txtClienteBairro";
             this.txtClienteBairro.Size = new System.Drawing.Size(217, 20);
             this.txtClienteBairro.TabIndex = 9;
@@ -78,7 +76,7 @@ namespace Biblioteca
             // lblClienteBairro
             // 
             this.lblClienteBairro.AutoSize = true;
-            this.lblClienteBairro.Location = new System.Drawing.Point(40, 222);
+            this.lblClienteBairro.Location = new System.Drawing.Point(37, 172);
             this.lblClienteBairro.Name = "lblClienteBairro";
             this.lblClienteBairro.Size = new System.Drawing.Size(34, 13);
             this.lblClienteBairro.TabIndex = 52;
@@ -86,7 +84,7 @@ namespace Biblioteca
             // 
             // btnClienteSalvar
             // 
-            this.btnClienteSalvar.Location = new System.Drawing.Point(89, 301);
+            this.btnClienteSalvar.Location = new System.Drawing.Point(86, 251);
             this.btnClienteSalvar.Name = "btnClienteSalvar";
             this.btnClienteSalvar.Size = new System.Drawing.Size(100, 23);
             this.btnClienteSalvar.TabIndex = 51;
@@ -97,7 +95,7 @@ namespace Biblioteca
             // lblClienteData
             // 
             this.lblClienteData.AutoSize = true;
-            this.lblClienteData.Location = new System.Drawing.Point(231, 116);
+            this.lblClienteData.Location = new System.Drawing.Point(228, 66);
             this.lblClienteData.Name = "lblClienteData";
             this.lblClienteData.Size = new System.Drawing.Size(89, 13);
             this.lblClienteData.TabIndex = 50;
@@ -106,7 +104,7 @@ namespace Biblioteca
             // txtClienteCep
             // 
             this.txtClienteCep.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtClienteCep.Location = new System.Drawing.Point(552, 183);
+            this.txtClienteCep.Location = new System.Drawing.Point(549, 133);
             this.txtClienteCep.Name = "txtClienteCep";
             this.txtClienteCep.Size = new System.Drawing.Size(111, 20);
             this.txtClienteCep.TabIndex = 8;
@@ -114,7 +112,7 @@ namespace Biblioteca
             // lblClienteCep
             // 
             this.lblClienteCep.AutoSize = true;
-            this.lblClienteCep.Location = new System.Drawing.Point(508, 185);
+            this.lblClienteCep.Location = new System.Drawing.Point(505, 135);
             this.lblClienteCep.Name = "lblClienteCep";
             this.lblClienteCep.Size = new System.Drawing.Size(28, 13);
             this.lblClienteCep.TabIndex = 49;
@@ -123,7 +121,7 @@ namespace Biblioteca
             // txtClienteComplemento
             // 
             this.txtClienteComplemento.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtClienteComplemento.Location = new System.Drawing.Point(90, 183);
+            this.txtClienteComplemento.Location = new System.Drawing.Point(87, 133);
             this.txtClienteComplemento.Name = "txtClienteComplemento";
             this.txtClienteComplemento.Size = new System.Drawing.Size(393, 20);
             this.txtClienteComplemento.TabIndex = 7;
@@ -131,7 +129,7 @@ namespace Biblioteca
             // lblClienteComplemento
             // 
             this.lblClienteComplemento.AutoSize = true;
-            this.lblClienteComplemento.Location = new System.Drawing.Point(12, 185);
+            this.lblClienteComplemento.Location = new System.Drawing.Point(9, 135);
             this.lblClienteComplemento.Name = "lblClienteComplemento";
             this.lblClienteComplemento.Size = new System.Drawing.Size(71, 13);
             this.lblClienteComplemento.TabIndex = 48;
@@ -169,7 +167,7 @@ namespace Biblioteca
             "SE",
             "TO",
             "DF"});
-            this.cbxClienteEstado.Location = new System.Drawing.Point(89, 260);
+            this.cbxClienteEstado.Location = new System.Drawing.Point(86, 210);
             this.cbxClienteEstado.Name = "cbxClienteEstado";
             this.cbxClienteEstado.Size = new System.Drawing.Size(111, 21);
             this.cbxClienteEstado.TabIndex = 11;
@@ -177,7 +175,7 @@ namespace Biblioteca
             // lblClienteEstado
             // 
             this.lblClienteEstado.AutoSize = true;
-            this.lblClienteEstado.Location = new System.Drawing.Point(41, 260);
+            this.lblClienteEstado.Location = new System.Drawing.Point(38, 210);
             this.lblClienteEstado.Name = "lblClienteEstado";
             this.lblClienteEstado.Size = new System.Drawing.Size(40, 13);
             this.lblClienteEstado.TabIndex = 47;
@@ -186,7 +184,7 @@ namespace Biblioteca
             // txtClienteCidade
             // 
             this.txtClienteCidade.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtClienteCidade.Location = new System.Drawing.Point(377, 220);
+            this.txtClienteCidade.Location = new System.Drawing.Point(374, 170);
             this.txtClienteCidade.Name = "txtClienteCidade";
             this.txtClienteCidade.Size = new System.Drawing.Size(286, 20);
             this.txtClienteCidade.TabIndex = 10;
@@ -194,7 +192,7 @@ namespace Biblioteca
             // lblClienteCidade
             // 
             this.lblClienteCidade.AutoSize = true;
-            this.lblClienteCidade.Location = new System.Drawing.Point(313, 222);
+            this.lblClienteCidade.Location = new System.Drawing.Point(310, 172);
             this.lblClienteCidade.Name = "lblClienteCidade";
             this.lblClienteCidade.Size = new System.Drawing.Size(40, 13);
             this.lblClienteCidade.TabIndex = 46;
@@ -203,7 +201,7 @@ namespace Biblioteca
             // txtClienteNumero
             // 
             this.txtClienteNumero.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtClienteNumero.Location = new System.Drawing.Point(552, 148);
+            this.txtClienteNumero.Location = new System.Drawing.Point(549, 98);
             this.txtClienteNumero.Name = "txtClienteNumero";
             this.txtClienteNumero.Size = new System.Drawing.Size(111, 20);
             this.txtClienteNumero.TabIndex = 6;
@@ -211,7 +209,7 @@ namespace Biblioteca
             // lblClienteNumero
             // 
             this.lblClienteNumero.AutoSize = true;
-            this.lblClienteNumero.Location = new System.Drawing.Point(492, 148);
+            this.lblClienteNumero.Location = new System.Drawing.Point(489, 98);
             this.lblClienteNumero.Name = "lblClienteNumero";
             this.lblClienteNumero.Size = new System.Drawing.Size(44, 13);
             this.lblClienteNumero.TabIndex = 44;
@@ -220,7 +218,7 @@ namespace Biblioteca
             // TxtClienteEndereco
             // 
             this.TxtClienteEndereco.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TxtClienteEndereco.Location = new System.Drawing.Point(90, 148);
+            this.TxtClienteEndereco.Location = new System.Drawing.Point(87, 98);
             this.TxtClienteEndereco.Name = "TxtClienteEndereco";
             this.TxtClienteEndereco.Size = new System.Drawing.Size(393, 20);
             this.TxtClienteEndereco.TabIndex = 5;
@@ -228,7 +226,7 @@ namespace Biblioteca
             // lblClienteEndereco
             // 
             this.lblClienteEndereco.AutoSize = true;
-            this.lblClienteEndereco.Location = new System.Drawing.Point(29, 148);
+            this.lblClienteEndereco.Location = new System.Drawing.Point(26, 98);
             this.lblClienteEndereco.Name = "lblClienteEndereco";
             this.lblClienteEndereco.Size = new System.Drawing.Size(53, 13);
             this.lblClienteEndereco.TabIndex = 42;
@@ -237,7 +235,7 @@ namespace Biblioteca
             // lblClienteCelular
             // 
             this.lblClienteCelular.AutoSize = true;
-            this.lblClienteCelular.Location = new System.Drawing.Point(499, 116);
+            this.lblClienteCelular.Location = new System.Drawing.Point(496, 66);
             this.lblClienteCelular.Name = "lblClienteCelular";
             this.lblClienteCelular.Size = new System.Drawing.Size(39, 13);
             this.lblClienteCelular.TabIndex = 39;
@@ -246,7 +244,7 @@ namespace Biblioteca
             // txtCPF
             // 
             this.txtCPF.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtCPF.Location = new System.Drawing.Point(90, 110);
+            this.txtCPF.Location = new System.Drawing.Point(87, 60);
             this.txtCPF.Name = "txtCPF";
             this.txtCPF.Size = new System.Drawing.Size(111, 20);
             this.txtCPF.TabIndex = 2;
@@ -254,7 +252,7 @@ namespace Biblioteca
             // lblCLienteCPF
             // 
             this.lblCLienteCPF.AutoSize = true;
-            this.lblCLienteCPF.Location = new System.Drawing.Point(47, 110);
+            this.lblCLienteCPF.Location = new System.Drawing.Point(44, 60);
             this.lblCLienteCPF.Name = "lblCLienteCPF";
             this.lblCLienteCPF.Size = new System.Drawing.Size(27, 13);
             this.lblCLienteCPF.TabIndex = 33;
@@ -263,7 +261,7 @@ namespace Biblioteca
             // txtCLienteNome
             // 
             this.txtCLienteNome.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtCLienteNome.Location = new System.Drawing.Point(89, 76);
+            this.txtCLienteNome.Location = new System.Drawing.Point(86, 26);
             this.txtCLienteNome.Name = "txtCLienteNome";
             this.txtCLienteNome.Size = new System.Drawing.Size(573, 20);
             this.txtCLienteNome.TabIndex = 1;
@@ -271,35 +269,16 @@ namespace Biblioteca
             // lblClienteNome
             // 
             this.lblClienteNome.AutoSize = true;
-            this.lblClienteNome.Location = new System.Drawing.Point(46, 76);
+            this.lblClienteNome.Location = new System.Drawing.Point(43, 26);
             this.lblClienteNome.Name = "lblClienteNome";
             this.lblClienteNome.Size = new System.Drawing.Size(35, 13);
             this.lblClienteNome.TabIndex = 30;
             this.lblClienteNome.Text = "Nome";
             // 
-            // txtClienteId
-            // 
-            this.txtClienteId.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtClienteId.Location = new System.Drawing.Point(89, 44);
-            this.txtClienteId.Name = "txtClienteId";
-            this.txtClienteId.ReadOnly = true;
-            this.txtClienteId.Size = new System.Drawing.Size(100, 20);
-            this.txtClienteId.TabIndex = 29;
-            this.txtClienteId.Text = "0";
-            // 
-            // lblCLienteId
-            // 
-            this.lblCLienteId.AutoSize = true;
-            this.lblCLienteId.Location = new System.Drawing.Point(64, 44);
-            this.lblCLienteId.Name = "lblCLienteId";
-            this.lblCLienteId.Size = new System.Drawing.Size(18, 13);
-            this.lblCLienteId.TabIndex = 28;
-            this.lblCLienteId.Text = "ID";
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(222, 260);
+            this.label1.Location = new System.Drawing.Point(219, 210);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(29, 13);
             this.label1.TabIndex = 55;
@@ -308,7 +287,7 @@ namespace Biblioteca
             // txtpais
             // 
             this.txtpais.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtpais.Location = new System.Drawing.Point(269, 258);
+            this.txtpais.Location = new System.Drawing.Point(266, 208);
             this.txtpais.Name = "txtpais";
             this.txtpais.Size = new System.Drawing.Size(100, 20);
             this.txtpais.TabIndex = 12;
@@ -316,7 +295,7 @@ namespace Biblioteca
             // txtnascimento
             // 
             this.txtnascimento.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtnascimento.Location = new System.Drawing.Point(345, 110);
+            this.txtnascimento.Location = new System.Drawing.Point(342, 60);
             this.txtnascimento.Name = "txtnascimento";
             this.txtnascimento.Size = new System.Drawing.Size(105, 20);
             this.txtnascimento.TabIndex = 3;
@@ -351,11 +330,10 @@ namespace Biblioteca
             this.Controls.Add(this.lblCLienteCPF);
             this.Controls.Add(this.txtCLienteNome);
             this.Controls.Add(this.lblClienteNome);
-            this.Controls.Add(this.txtClienteId);
-            this.Controls.Add(this.lblCLienteId);
             this.Name = "Cliente";
             this.Text = "Cliente";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.Cliente_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -384,8 +362,6 @@ namespace Biblioteca
 		private System.Windows.Forms.Label lblCLienteCPF;
 		private System.Windows.Forms.TextBox txtCLienteNome;
 		private System.Windows.Forms.Label lblClienteNome;
-		private System.Windows.Forms.TextBox txtClienteId;
-		private System.Windows.Forms.Label lblCLienteId;
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.TextBox txtpais;
         private System.Windows.Forms.TextBox txtnascimento;

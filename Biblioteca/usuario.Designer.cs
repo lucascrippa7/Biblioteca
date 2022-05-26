@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblIdUsuario = new System.Windows.Forms.Label();
-            this.txtID = new System.Windows.Forms.TextBox();
             this.lblLoginUsuario = new System.Windows.Forms.Label();
             this.txtLoginUsuario = new System.Windows.Forms.TextBox();
             this.lblSenhaUsuario = new System.Windows.Forms.Label();
@@ -37,28 +35,10 @@
             this.btnSalvarUsuario = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // lblIdUsuario
-            // 
-            this.lblIdUsuario.AutoSize = true;
-            this.lblIdUsuario.Location = new System.Drawing.Point(36, 39);
-            this.lblIdUsuario.Name = "lblIdUsuario";
-            this.lblIdUsuario.Size = new System.Drawing.Size(18, 13);
-            this.lblIdUsuario.TabIndex = 0;
-            this.lblIdUsuario.Text = "ID";
-            // 
-            // txtID
-            // 
-            this.txtID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtID.Location = new System.Drawing.Point(74, 36);
-            this.txtID.Name = "txtID";
-            this.txtID.ReadOnly = true;
-            this.txtID.Size = new System.Drawing.Size(100, 20);
-            this.txtID.TabIndex = 1;
-            // 
             // lblLoginUsuario
             // 
             this.lblLoginUsuario.AutoSize = true;
-            this.lblLoginUsuario.Location = new System.Drawing.Point(18, 84);
+            this.lblLoginUsuario.Location = new System.Drawing.Point(25, 32);
             this.lblLoginUsuario.Name = "lblLoginUsuario";
             this.lblLoginUsuario.Size = new System.Drawing.Size(33, 13);
             this.lblLoginUsuario.TabIndex = 2;
@@ -67,7 +47,7 @@
             // txtLoginUsuario
             // 
             this.txtLoginUsuario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtLoginUsuario.Location = new System.Drawing.Point(74, 84);
+            this.txtLoginUsuario.Location = new System.Drawing.Point(81, 32);
             this.txtLoginUsuario.Name = "txtLoginUsuario";
             this.txtLoginUsuario.Size = new System.Drawing.Size(100, 20);
             this.txtLoginUsuario.TabIndex = 3;
@@ -75,7 +55,7 @@
             // lblSenhaUsuario
             // 
             this.lblSenhaUsuario.AutoSize = true;
-            this.lblSenhaUsuario.Location = new System.Drawing.Point(16, 123);
+            this.lblSenhaUsuario.Location = new System.Drawing.Point(23, 71);
             this.lblSenhaUsuario.Name = "lblSenhaUsuario";
             this.lblSenhaUsuario.Size = new System.Drawing.Size(38, 13);
             this.lblSenhaUsuario.TabIndex = 4;
@@ -84,7 +64,7 @@
             // txtSenhaUsuario
             // 
             this.txtSenhaUsuario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtSenhaUsuario.Location = new System.Drawing.Point(74, 120);
+            this.txtSenhaUsuario.Location = new System.Drawing.Point(81, 68);
             this.txtSenhaUsuario.Name = "txtSenhaUsuario";
             this.txtSenhaUsuario.PasswordChar = '*';
             this.txtSenhaUsuario.Size = new System.Drawing.Size(100, 20);
@@ -92,7 +72,7 @@
             // 
             // btnSalvarUsuario
             // 
-            this.btnSalvarUsuario.Location = new System.Drawing.Point(74, 166);
+            this.btnSalvarUsuario.Location = new System.Drawing.Point(81, 114);
             this.btnSalvarUsuario.Name = "btnSalvarUsuario";
             this.btnSalvarUsuario.Size = new System.Drawing.Size(75, 23);
             this.btnSalvarUsuario.TabIndex = 6;
@@ -110,8 +90,6 @@
             this.Controls.Add(this.lblSenhaUsuario);
             this.Controls.Add(this.txtLoginUsuario);
             this.Controls.Add(this.lblLoginUsuario);
-            this.Controls.Add(this.txtID);
-            this.Controls.Add(this.lblIdUsuario);
             this.Name = "usuario";
             this.Text = "usuario";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -121,9 +99,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label lblIdUsuario;
-        private System.Windows.Forms.TextBox txtID;
         private System.Windows.Forms.Label lblLoginUsuario;
         private System.Windows.Forms.TextBox txtLoginUsuario;
         private System.Windows.Forms.Label lblSenhaUsuario;

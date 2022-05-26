@@ -35,16 +35,16 @@
             // dgVizuaTransacao
             // 
             this.dgVizuaTransacao.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgVizuaTransacao.Location = new System.Drawing.Point(52, 47);
+            this.dgVizuaTransacao.Location = new System.Drawing.Point(12, 12);
             this.dgVizuaTransacao.Name = "dgVizuaTransacao";
-            this.dgVizuaTransacao.Size = new System.Drawing.Size(251, 376);
+            this.dgVizuaTransacao.Size = new System.Drawing.Size(776, 411);
             this.dgVizuaTransacao.TabIndex = 0;
             // 
             // VizualizarTransacao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1317, 596);
             this.Controls.Add(this.dgVizuaTransacao);
             this.Name = "VizualizarTransacao";
             this.Text = "VizualizarTransacao";

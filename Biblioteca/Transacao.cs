@@ -187,6 +187,42 @@ namespace Biblioteca
 						DataTable dtlista = new DataTable();
 						objAdp.Fill(dtlista);
 					}
+
+					strSQL = "INSERT INTO `projetobiblioteca`.`log_transacao`";
+					strSQL = strSQL + " (`id_tipo_transacao`,";
+					strSQL = strSQL + " `dt_transacao`,";
+					strSQL = strSQL + " `id_cliente`,";
+					strSQL = strSQL + " `id_livro`)";
+					strSQL = strSQL + " VALUES";
+					strSQL = strSQL + " (" + cbtransacao.SelectedValue + ",";
+					strSQL = strSQL + "'" + DateTime.Today.Year + "/" + DateTime.Today.Month + "/" + DateTime.Today.Day + "',";
+					strSQL = strSQL + cbCliente.SelectedValue + ",";
+					strSQL = strSQL + linha.Cells[1].Value + ");";
+					conexao = new MySqlConnection(conn);
+					objCommand = new MySqlCommand(strSQL, conexao);
+
+					if (linha.Cells[0].Value != null)
+					{
+						MySqlDataAdapter objAdp = new MySqlDataAdapter(objCommand);
+						DataTable dtlista = new DataTable();
+						objAdp.Fill(dtlista);
+					}
+
+					if(Convert.ToInt16(cbtransacao.SelectedValue) == 3)
+                    {
+						strSQL = "delete from `projetobiblioteca`.`transacao`";
+						strSQL = strSQL + " where  id_livro = " + linha.Cells[1].Value + " and id_tipo_transacao = 2;";
+						
+						conexao = new MySqlConnection(conn);
+						objCommand = new MySqlCommand(strSQL, conexao);
+
+						if (linha.Cells[0].Value != null)
+						{
+							MySqlDataAdapter objAdp = new MySqlDataAdapter(objCommand);
+							DataTable dtlista = new DataTable();
+							objAdp.Fill(dtlista);
+						}
+					}
 				}
 
 			}
@@ -228,5 +264,10 @@ namespace Biblioteca
 			id_cli = Convert.ToInt16(cbCliente.SelectedValue);
 			listagrid();
 		}
+
+        private void txtdata_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

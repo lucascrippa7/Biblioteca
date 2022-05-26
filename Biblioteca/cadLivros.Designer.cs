@@ -29,8 +29,6 @@ namespace Biblioteca
 		/// </summary>
 		private void InitializeComponent()
 		{
-            this.txtID = new System.Windows.Forms.TextBox();
-            this.ID = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -41,32 +39,13 @@ namespace Biblioteca
             this.txtEditora = new System.Windows.Forms.TextBox();
             this.txtAno = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.cbxativo = new System.Windows.Forms.CheckBox();
             this.cbGenero = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
-            // 
-            // txtID
-            // 
-            this.txtID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtID.Enabled = false;
-            this.txtID.Location = new System.Drawing.Point(87, 30);
-            this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(135, 20);
-            this.txtID.TabIndex = 0;
-            // 
-            // ID
-            // 
-            this.ID.AutoSize = true;
-            this.ID.Location = new System.Drawing.Point(49, 33);
-            this.ID.Name = "ID";
-            this.ID.Size = new System.Drawing.Size(18, 13);
-            this.ID.TabIndex = 1;
-            this.ID.Text = "ID";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(31, 75);
+            this.label1.Location = new System.Drawing.Point(31, 35);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(42, 13);
             this.label1.TabIndex = 2;
@@ -75,7 +54,7 @@ namespace Biblioteca
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(37, 118);
+            this.label2.Location = new System.Drawing.Point(37, 78);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(30, 13);
             this.label2.TabIndex = 3;
@@ -84,7 +63,7 @@ namespace Biblioteca
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(37, 157);
+            this.label3.Location = new System.Drawing.Point(37, 117);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(32, 13);
             this.label3.TabIndex = 4;
@@ -93,7 +72,7 @@ namespace Biblioteca
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(27, 197);
+            this.label4.Location = new System.Drawing.Point(27, 157);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(40, 13);
             this.label4.TabIndex = 5;
@@ -102,7 +81,7 @@ namespace Biblioteca
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(280, 75);
+            this.label5.Location = new System.Drawing.Point(280, 35);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(61, 13);
             this.label5.TabIndex = 6;
@@ -111,7 +90,7 @@ namespace Biblioteca
             // txtLivro
             // 
             this.txtLivro.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtLivro.Location = new System.Drawing.Point(87, 118);
+            this.txtLivro.Location = new System.Drawing.Point(87, 78);
             this.txtLivro.Name = "txtLivro";
             this.txtLivro.Size = new System.Drawing.Size(408, 20);
             this.txtLivro.TabIndex = 9;
@@ -119,7 +98,7 @@ namespace Biblioteca
             // txtAutor
             // 
             this.txtAutor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtAutor.Location = new System.Drawing.Point(87, 157);
+            this.txtAutor.Location = new System.Drawing.Point(87, 117);
             this.txtAutor.Name = "txtAutor";
             this.txtAutor.Size = new System.Drawing.Size(408, 20);
             this.txtAutor.TabIndex = 10;
@@ -127,7 +106,7 @@ namespace Biblioteca
             // txtEditora
             // 
             this.txtEditora.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtEditora.Location = new System.Drawing.Point(87, 197);
+            this.txtEditora.Location = new System.Drawing.Point(87, 157);
             this.txtEditora.Name = "txtEditora";
             this.txtEditora.Size = new System.Drawing.Size(408, 20);
             this.txtEditora.TabIndex = 11;
@@ -135,14 +114,14 @@ namespace Biblioteca
             // txtAno
             // 
             this.txtAno.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtAno.Location = new System.Drawing.Point(360, 72);
+            this.txtAno.Location = new System.Drawing.Point(360, 32);
             this.txtAno.Name = "txtAno";
             this.txtAno.Size = new System.Drawing.Size(135, 20);
             this.txtAno.TabIndex = 12;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(87, 240);
+            this.button1.Location = new System.Drawing.Point(87, 200);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 14;
@@ -150,20 +129,10 @@ namespace Biblioteca
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // cbxativo
-            // 
-            this.cbxativo.AutoSize = true;
-            this.cbxativo.Location = new System.Drawing.Point(262, 33);
-            this.cbxativo.Name = "cbxativo";
-            this.cbxativo.Size = new System.Drawing.Size(50, 17);
-            this.cbxativo.TabIndex = 16;
-            this.cbxativo.Text = "Ativo";
-            this.cbxativo.UseVisualStyleBackColor = true;
-            // 
             // cbGenero
             // 
             this.cbGenero.FormattingEnabled = true;
-            this.cbGenero.Location = new System.Drawing.Point(87, 75);
+            this.cbGenero.Location = new System.Drawing.Point(87, 35);
             this.cbGenero.Name = "cbGenero";
             this.cbGenero.Size = new System.Drawing.Size(135, 21);
             this.cbGenero.TabIndex = 17;
@@ -174,7 +143,6 @@ namespace Biblioteca
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1370, 620);
             this.Controls.Add(this.cbGenero);
-            this.Controls.Add(this.cbxativo);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtAno);
             this.Controls.Add(this.txtEditora);
@@ -185,8 +153,6 @@ namespace Biblioteca
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.ID);
-            this.Controls.Add(this.txtID);
             this.Name = "cadLivros";
             this.Text = "cadLivros";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -197,9 +163,6 @@ namespace Biblioteca
 		}
 
 		#endregion
-
-		private System.Windows.Forms.TextBox txtID;
-		private System.Windows.Forms.Label ID;
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.Label label3;
@@ -210,7 +173,6 @@ namespace Biblioteca
 		private System.Windows.Forms.TextBox txtEditora;
 		private System.Windows.Forms.TextBox txtAno;
 		private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.CheckBox cbxativo;
         private System.Windows.Forms.ComboBox cbGenero;
     }
 }
