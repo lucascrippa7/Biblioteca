@@ -14,6 +14,8 @@ namespace Biblioteca
 {
     public partial class FrmLogin : Form
     {
+
+
         public FrmLogin()
         {
             InitializeComponent();
@@ -29,12 +31,12 @@ namespace Biblioteca
             MySqlCommand comando = new MySqlCommand();
             comando = conexao.CreateCommand();
 
-            comando.CommandText = "select nome from usuario ";
+            comando.CommandText = "select nome, senha from usuario ";
 
             MySqlDataReader dr = comando.ExecuteReader();
             DataTable dt = new DataTable();
             dt.Load(dr);
-            cbUsuarios.ValueMember = "nome";
+            cbUsuarios.ValueMember = "senha";
             cbUsuarios.DisplayMember = "nome";
             cbUsuarios.DataSource = dt;
 
@@ -43,19 +45,27 @@ namespace Biblioteca
 
         private void CarregarUsuario()
         {
-            
+
         }
 
         private void btnEntrar_Click(object sender, EventArgs e)
         {
-            if(txtSenha.Text == "teste")
+
+
+            if (Convert.ToString(txtSenha.Text) == Convert.ToString(cbUsuarios.SelectedValue))
             {
                 this.Close();
             }
+
             else
             {
-                MessageBox.Show("Login ou Senha incorreto");
+                MessageBox.Show("Senha invalida");
             }
+        }
+
+        private void btnSair_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
