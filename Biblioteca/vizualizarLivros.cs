@@ -92,7 +92,15 @@ namespace Biblioteca
 
         private void btnAtualizar_Click(object sender, EventArgs e)
         {
-			DialogResult dialogResult = MessageBox.Show("Deseja alterar o cliente '" + dgDados.CurrentRow.Cells[1].Value + "' ?", "Cliente", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+			DialogResult dialogResult = MessageBox.Show("Deseja alterar o cliente '" + dgDados.CurrentRow.Cells[2].Value + "' ?", "Cliente", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+			if (dialogResult == DialogResult.Yes)
+            {
+
+            }
+
+
+
+
 		}
     }
 }

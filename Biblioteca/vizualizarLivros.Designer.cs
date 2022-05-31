@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.dgDados = new System.Windows.Forms.DataGridView();
-            this.btnAtualizar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgDados)).BeginInit();
             this.SuspendLayout();
             // 
@@ -41,22 +40,11 @@
             this.dgDados.Size = new System.Drawing.Size(1009, 497);
             this.dgDados.TabIndex = 0;
             // 
-            // btnAtualizar
-            // 
-            this.btnAtualizar.Location = new System.Drawing.Point(357, 550);
-            this.btnAtualizar.Name = "btnAtualizar";
-            this.btnAtualizar.Size = new System.Drawing.Size(75, 23);
-            this.btnAtualizar.TabIndex = 1;
-            this.btnAtualizar.Text = "Atualizar";
-            this.btnAtualizar.UseVisualStyleBackColor = true;
-            this.btnAtualizar.Click += new System.EventHandler(this.btnAtualizar_Click);
-            // 
             // vizualizarLivros
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1033, 607);
-            this.Controls.Add(this.btnAtualizar);
             this.Controls.Add(this.dgDados);
             this.Name = "vizualizarLivros";
             this.Text = "vizualizarLivros";
@@ -70,6 +58,5 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dgDados;
-        private System.Windows.Forms.Button btnAtualizar;
     }
 }
